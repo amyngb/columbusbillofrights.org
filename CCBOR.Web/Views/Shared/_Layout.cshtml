@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Columbus Community Bill of Rights</title>
+    <meta name="description" content="" />
+    <meta name="Author" content="JMG Software" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/css/essentials.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/css/thematics-education.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/css/header-1.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
+</head>
+<body class="smoothscroll enable-animation">
+    <div id="wrapper">
+        @Html.Partial("_TopBar")
+        @Html.Partial("_Header")
+        <div>
+            @RenderBody()
+        </div>
+        @Html.Partial("_Footer")
+    </div>
+    <a href="#" id="toTop"></a>
+    <div id="preloader">
+        <div class="inner">
+            <span class="loader"></span>
+        </div>
+    </div>
+    <script>var plugin_path = '~/Content/assets/plugins/';</script>
+    <script src="~/Content/assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+    <script src="~/Content/assets/js/scripts.js"></script>
+    <script src="~/Content/assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="~/Content/assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="~/Content/assets/js/view/demo.revolution_slider.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
