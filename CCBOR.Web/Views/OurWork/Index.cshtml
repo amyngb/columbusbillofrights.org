@@ -1,7 +1,69 @@
-﻿
-@{
-    ViewBag.Title = "Index";
+﻿@{
+    ViewBag.Title = "Our Work";
 }
-
-<h2>Index</h2>
-
+<section id="ourWork">
+    <div class="container text-center">
+        <h1 class="m-0 fs-50 fw-300 wow fadeInUp" data-wow-delay="0.4s">Our Work and Initiatives</h1>
+        <p class="lead font-lato fs-30 wow fadeInUp" data-wow-delay="0.7s">We are working hard to ensure safe drinking water, clean air, and safe soil in the City of Columbus.</p>
+        <div class="mt-30">
+            <a href="#" class="btn btn-3d btn-lg btn-green"><i class="glyphicon glyphicon-piggy-bank"></i>DONATE NOW</a>
+            <span class="fs-17 hidden-xs-down">&nbsp; AND &nbsp;</span>
+            <a href="#" class="btn btn-3d btn-lg btn-primary"><i class="glyphicon glyphicon-user"></i>HELP OUT</a>
+        </div>
+    </div>
+</section>
+<div class="container mt-20">
+    <h2>Overview</h2>
+    @Html.Partial("~/Views/OurWork/Shared/_OurWorkOverview.cshtml")
+    <p>
+        <a href="@Url.Action("About","OurWork")" class="btn btn-3d btn-lg btn-primary"><i class="glyphicon glyphicon-book"></i>LEARN MORE</a>
+    </p>
+</div>
+<section class="alternate">
+    <div class="container">
+        <h2>
+            Franklin County Charter
+        </h2>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 mb-30">
+                <div>
+                    <p>
+                        <a href="@Url.Action("FranklinCountyCharter","OurWork")" class="btn btn-3d btn-lg btn-primary"><i class="glyphicon glyphicon-book"></i>LEARN MORE</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="theme-color">
+    <div class="container">
+        <h2>
+            We The People 2.0
+        </h2>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 mb-30">
+                <div>
+                    <p>
+                        <a href="@Url.Action("WeThePeople","OurWork")" class="btn btn-3d btn-lg btn-primary"><i class="glyphicon glyphicon-book"></i>LEARN MORE</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2>
+            Ohio Democracy School
+        </h2>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 mb-30">
+                <div>
+                    <p>
+                        <a href="@Url.Action("OhioDemocracySchool","OurWork")" class="btn btn-3d btn-lg btn-primary"><i class="glyphicon glyphicon-book"></i>LEARN MORE</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
