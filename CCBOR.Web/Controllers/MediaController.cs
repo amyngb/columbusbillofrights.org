@@ -13,5 +13,13 @@ namespace CCBOR.Web.Controllers
         {
             return View();
         }
+        public ActionResult PhotoGallery()
+        {
+            return View();
+        }
+        public ActionResult VideoGallery()
+        {
+            return View();
+        }
     }
 }

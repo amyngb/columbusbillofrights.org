@@ -6907,9 +6907,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\Custom\" />
-    <Folder Include="Views\Blog\" />
-    <Folder Include="Views\Contact\" />
-    <Folder Include="Views\Media\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -6971,6 +6968,14 @@
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Home\_Slider.cshtml" />
     <Content Include="Views\OurWork\Shared\_OurWorkOverview.cshtml" />
+    <Content Include="Views\Media\PhotoGallery.cshtml" />
+    <Content Include="Views\Media\VideoGallery.cshtml" />
+    <Content Include="Views\Resources\Index.cshtml" />
+    <Content Include="Views\HelpOut\Index.cshtml" />
+    <Content Include="Views\Events\Index.cshtml" />
+    <Content Include="Views\Blog\Index.cshtml" />
+    <Content Include="Views\Media\Index.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CCBOR.Core\CCBOR.Core.csproj">
