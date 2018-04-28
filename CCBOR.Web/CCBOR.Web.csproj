@@ -7025,6 +7025,7 @@
     <None Include="Content\bootstrap-reboot.css.map" />
     <None Include="Content\bootstrap-grid.min.css.map" />
     <None Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Views\Media\Shared\_LatestVideos.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CCBOR.Core\CCBOR.Core.csproj">
