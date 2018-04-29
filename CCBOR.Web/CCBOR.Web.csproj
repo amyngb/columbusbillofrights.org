@@ -179,13 +179,16 @@
     <Content Include="Content\assets\images\mdl-blue-min.jpg" />
     <Content Include="Content\assets\images\mdl-green-min.jpg" />
     <Content Include="Content\assets\images\mdl-min.jpg" />
+    <Content Include="Content\assets\images\Mosher4.JPG" />
     <Content Include="Content\assets\images\n4.png" />
     <Content Include="Content\assets\images\parallax-transp.jpg" />
     <Content Include="Content\assets\images\parallax.jpg" />
     <Content Include="Content\assets\images\particles_bg.jpg" />
+    <Content Include="Content\assets\images\SAM_0935.JPG" />
     <Content Include="Content\assets\images\sky-1-min.jpg" />
     <Content Include="Content\assets\images\sky-2-min.jpg" />
     <Content Include="Content\assets\images\sky-3-min.jpg" />
+    <Content Include="Content\assets\images\UpperScioto_Columbus\UpperScioto_Columbus-1.jpg" />
     <Content Include="Content\assets\images\wall2.jpg" />
     <Content Include="Content\assets\images\wall3-min.jpg" />
     <Content Include="Content\assets\images\yellow-min.jpg" />
@@ -1314,8 +1317,6 @@
     <Content Include="Content\assets\plugins\slider.layerslider\overlays\grid_small.png" />
     <Content Include="Content\assets\plugins\slider.layerslider\overlays\grid_stripes_left.png" />
     <Content Include="Content\assets\plugins\slider.layerslider\overlays\grid_stripes_right.png" />
-    <Content Include="Content\assets\plugins\slider.layerslider\plugins\debug\layerslider.debug.css" />
-    <Content Include="Content\assets\plugins\slider.layerslider\plugins\debug\layerslider.debug.js" />
     <Content Include="Content\assets\plugins\slider.layerslider\plugins\origami\layerslider.origami.css" />
     <Content Include="Content\assets\plugins\slider.layerslider\plugins\origami\layerslider.origami.js" />
     <Content Include="Content\assets\plugins\slider.layerslider\plugins\popup\layerslider.popup.css" />
@@ -3525,13 +3526,6 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
-    <Content Include="Web.config" />
-    <Content Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
@@ -3578,6 +3572,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\assets\plugins\slider.layerslider\plugins\debug\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\Custom\" />
   </ItemGroup>
@@ -3624,6 +3619,9 @@
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Shared\_SlideTop.cshtml" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CCBOR.Core\CCBOR.Core.csproj">
