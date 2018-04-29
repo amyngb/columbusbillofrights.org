@@ -3539,7 +3539,6 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\OurWork\Index.cshtml" />
     <Content Include="Views\OurWork\About.cshtml" />
-    <Content Include="Views\OurWork\FranklinCountyCharter.cshtml" />
     <Content Include="Views\OurWork\WeThePeople.cshtml" />
     <Content Include="Views\OurWork\OhioDemocracySchool.cshtml" />
     <Content Include="Views\Resources\InjectionWells.cshtml" />
