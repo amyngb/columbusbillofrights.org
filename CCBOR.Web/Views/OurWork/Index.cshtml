@@ -14,6 +14,7 @@
 </section>
 <div class="container mt-20">
     <h2>Overview</h2>
+    @Html.Partial("~/Views/OurWork/Shared/_OurWorkOverview.cshtml")
     <p>
         <a href="@Url.Action("About","OurWork")" class="btn btn-3d btn-lg btn-primary"><i class="glyphicon glyphicon-book"></i>LEARN MORE</a>
     </p>
@@ -21,13 +22,16 @@
 <section class="alternate">
     <div class="container">
         <h2>
-            Franklin County Charter
+            We The People 2.0
         </h2>
         <div class="row">
             <div class="col-md-12 col-sm-12 mb-30">
                 <div>
                     <p>
-                        <a href="@Url.Action("FranklinCountyCharter","OurWork")" class="btn btn-3d btn-lg btn-primary"><i class="glyphicon glyphicon-book"></i>LEARN MORE</a>
+                        Schedule a documentary showing of We The People 2.0 - The Second American Revolution
+                    </p>
+                    <p>
+                        <a href="@Url.Action("WeThePeople","OurWork")" class="btn btn-3d btn-lg btn-primary"><i class="glyphicon glyphicon-book"></i>LEARN MORE</a>
                     </p>
                 </div>
             </div>
@@ -37,29 +41,16 @@
 <section class="theme-color">
     <div class="container">
         <h2>
-            We The People 2.0
-        </h2>
-        <div class="row">
-            <div class="col-md-12 col-sm-12 mb-30">
-                <div>
-                    <p>
-                        <a href="@Url.Action("WeThePeople","OurWork")" class="btn btn-3d btn-lg btn-primary"><i class="glyphicon glyphicon-book"></i>LEARN MORE</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section>
-    <div class="container">
-        <h2>
             Ohio Democracy School
         </h2>
         <div class="row">
             <div class="col-md-12 col-sm-12 mb-30">
                 <div>
                     <p>
-                        <a href="@Url.Action("OhioDemocracySchool","OurWork")" class="btn btn-3d btn-lg btn-primary"><i class="glyphicon glyphicon-book"></i>LEARN MORE</a>
+                        The Workshop makes clear what roadblocks we face when we try to create the communities we envision. We will explore what prevents us from stopping projects that threaten our community, and why We the People are not the ones making decisions about those things directly impacting us, such as energy production, safeguarding the environment, protecting workers rights, free and fair elections, education, and myriad other decisions that shape and reflect the values of the communities in which we live.
+                    </p>
+                    <p>
+                        <a href="@Url.Action("OhioDemocracySchool","OurWork")" class="btn btn-3d btn-lg btn-white"><i class="glyphicon glyphicon-book"></i>LEARN MORE</a>
                     </p>
                 </div>
             </div>

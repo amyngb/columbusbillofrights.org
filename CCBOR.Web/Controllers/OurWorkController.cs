@@ -19,11 +19,6 @@ namespace CCBOR.Web.Controllers
             return View();
         }
 
-        public ActionResult FranklinCountyCharter()
-        {
-            return View();
-        }
-
         public ActionResult WeThePeople()
         {
             return View();
