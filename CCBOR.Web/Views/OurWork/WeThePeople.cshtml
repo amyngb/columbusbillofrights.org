@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "We The People";
+    ViewBag.Title = "We The People 2.0";
 }
 <section class="page-header page-header-xlg parallax parallax-3"
          style="background-image:url('@Url.Content("~/Content/assets/images/15-min.jpg")')">
@@ -7,27 +7,48 @@
     <div class="container">
         <h1>WE THE PEOPLE</h1>
         <ol class="breadcrumb">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Our Work</a></li>
+            <li><a href="@Url.Action("Index","Home")">Home</a></li>
+            <li><a href="@Url.Action("Index","OurWork")">Our Work</a></li>
             <li class="active">We The People</li>
         </ol>
     </div>
 </section>
-<section>
+<section class="mb-0">
     <div class="container">
         <h2>We The People 2.0</h2>
+        <div class="text-center">
+            <p class="uppercase"><strong>film release: october 2016</strong></p>
+            <p>
+                "If you live in a corporate state, the only thing left to do is to dismantle it and build something new."
+            </p>
+        </div>
     </div>
 </section>
-<div class="callout alert alert-info b-0 rad-0 m-0">
+<div class="callout alert alert-info b-0 rad-0 m-0 mt-0">
     <div class="text-center">
         <p>
             <strong>
                 Schedule a documentary showing of
                 We The People 2.0 - The Second American Revolution
             </strong>
-        </p>
+        </p>  
     </div>
 </div>
 <section>
-
+    <div class="container">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/gGyLRhsGYjU"></iframe>
+        </div>
+    </div>
 </section>
+<div class="callout alert alert-info b-0 rad-0 m-0">
+    <div class="text-center">
+        <p>
+            <strong>
+                Contact us at <a href="mailto:columbusbillofrights@gmail.com">columbusbillofrights@gmail.com</a>
+                to schedule your showing of this important documentary
+                in Central Ohio.
+            </strong>
+        </p>
+    </div>
+</div>
