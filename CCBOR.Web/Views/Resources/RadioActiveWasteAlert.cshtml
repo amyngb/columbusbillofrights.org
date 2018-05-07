@@ -2,19 +2,6 @@
 @{
     ViewBag.Title = "RadioActiveWasteAlert";
 }
-<script src="~/Content/assets/js/env.js"></script>
-<script>
-    var env = {
-        staticMapKey: '',
-    };
-    // Import variables if present (from env.js)
-    if (window.__env) {
-        Object.assign(env, window.__env);
-    }
-    //Dynamcally load our script
-    var mapSrc = 'https://maps.googleapis.com/maps/api/js?key=' + env.staticMapKey + '&callback=initMap&libraries=places';
-
-</script>
 
 <section class="page-header page-header-xlg parallax parallax-3"
          style="background-image:url('@Url.Content("~/Content/assets/images/15-min.jpg")')">
@@ -22,30 +9,52 @@
     <div class="container">
         <h1>Radioactive Waste Alert</h1>
         <ol class="breadcrumb">
-            <li><a href="~/Views/Home/Index.cshtml">Home</a></li>
-            <li><a href="~/Views/OurWork/Index.cshtml">Our Work</a></li>
+            <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+            <li><a href="@Url.Action("Index", "Resources")">Resources</a></li>
             <li class="active">Radioactive Waste Alert</li>
         </ol>
     </div>
 </section>
 <section class="theme-color">
     <div class="container">
-        <h2>Columbus Concern</h2>
+        <h2>
+            Columbus Concern
+        </h2>
+        <div style="width: 500px; float:right; margin: 5px;">
+            <img id="staticMap">
+            <small>Ohio Soil Recycling LLC, on the banks of Alum Creek in Columbus City Limits</small>
+        </div>
         <p>
-            The Ohio EPA (Environmental Protection Agency) recently approved a controversial permit to allow the processing and "reuse" of Radioactive Solid Frack Waste (drill/cuttings and sludge) at the Ohio Soil Recycling Co., located on the banks of Alum Creek, a Columbus Area watershed, next to the Alum Creek Greenway Bike Trail, 2.2 miles from Bexley, 5 miles from the Ohio State House, and upstream from the Alum Creek merge into the Scioto River.
+            The Ohio EPA (Environmental Protection Agency) recently approved a <a href="@Url.Action("Resources", "EPA")"> controversial permit</a> to allow the processing and "reuse" of Radioactive Solid Frack Waste (drill/cuttings and sludge) at the Ohio Soil Recycling Co., located on the banks of Alum Creek, a Columbus Area watershed, next to the Alum Creek Greenway Bike Trail, 2.2 miles from Bexley, 5 miles from the Ohio State House, and upstream from the Alum Creek merge into the Scioto River.
         </p>
-        <h2>All Landfills Leak</h2>
+        <h2>
+            All Landfills Leak
+        </h2>
         <p>
             Toxic chemicals and radioactive elements leak from landfills into our rivers and streams through our ground water and can contaminate our water supply.  All landfills leak, some while the landfill is actively operating, but 100% of them will leak after a few decades.  In particular, Radium 226 is highly water soluble, and even if it is "diluted" with dirt, sawdust, or other elements to meet certain EPA requirments, it will make its way into our water supply.
         </p>
         <p>
             By classifying this waste as "Naturally Occuring" the state can allow this disposal without testing for radioactivity at the dump sites. The most prolific gas and oil production areas in underground shale are also the very "hottest" from the standpoint of radioactivity, because of the way in which gas and oil are formed.  Nearly all solid and liquid waste from Fracking contains levels of radiation, some of which can cause Public Health concerns.
         </p>
-        <h2>Health Risks</h2>
+        <h2>
+            Health Risks
+        </h2>
         <p>
             There is abundant documentation of the correlation between the leaking of landfill toxins and radiation into air and water, and health problems.  Health risks include: low birth weight, birth defects, enlargement and liver abnormalities, and higher rates of cancer including panceatic cancer. Radium 226 is particularly linked with leukemia.
         </p>
+        <h2>
+            Beyond Columbus
+        </h2>
+        <p>
+            Ohio has become the Radioactive Toxic Frack Waste Dump for all regional Frack Waste.  In addition to Ohio's waste, we are importing contaminated drill cuttings and liquid frack waste from Pennsylvania and West Virginia.  It is faster and cheaper to truck their waste into Ohio and dump it into our landfills, abandoned vertical oil wells and newly permitted injection wells, where this Radioactive Toxic Frack Waste can leak, migrate and contaminate Ohio's water supply.
+        </p>
     </div>
 </section>
+
+@section scripts {
+    <script src="~/Content/assets/js/env.js"></script>
+    <script src="~/Content/assets/js/googlemap.js"></script>
+
+}
 
 
