@@ -7433,6 +7433,10 @@ section.dark .card-default>.card-heading {
 	margin:0;
 }
 
+.card h3 {
+    margin: 0;
+}
+
 .card-heading .btn:not(.btn-default),
 .card-footer .btn:not(.btn-default) {
 	color: #fff !important;

@@ -13,15 +13,5 @@ namespace CCBOR.Web.Controllers
         {
             return View();
         }
-
-        public ActionResult ComingEvents()
-        {
-            return View();
-        }
-
-        public ActionResult PastEvents()
-        {
-            return View();
-        }
     }
 }
