@@ -1,5 +1,48 @@
-﻿
-@{
-    ViewBag.Title = "Events";
+﻿@{
+    ViewBag.Title = "Coming Events";
 }
+
+
+<section class="page-header page-header-xlg parallax parallax-3"
+         style="background-image:url('@Url.Content("~/Content/assets/images/15-min.jpg")')">
+    <div class="overlay dark-4"></div>
+    <div class="container">
+        <h1>Coming Events</h1>
+        <ol class="breadcrumb">
+            <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+            <li><a href="@Url.Action("Index", "Events")">Events</a></li>
+            <li class="active">Coming Events</li>
+        </ol>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2>Events</h2>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 text-center" id="eventBrite">
+                <iframe src="https://www.eventbrite.com/calendar-widget?eid=45615690759" frameborder="0" height="365" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true" style="text-align:center; display:block; margin:auto;"></iframe>
+            </div>
+            @*<div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h3>Title</h3>
+                        </div>
+                        <div class="card-body">
+                            <div>Date/time</div>
+                            <p>location</p>
+                            <p>Description </p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="#" class="btn btn-3d btn-lg btn-primary"><i class="glyphicon glyphicon-book"></i>REGISTER</a>
+                        </div>
+                    </div>
+                </div>*@
+        </div>
+    </div>
+</section>
+
+@section scripts {
+    <script src="~/Content/assets/js/eventbrite.js"></script>
+}
+
 
