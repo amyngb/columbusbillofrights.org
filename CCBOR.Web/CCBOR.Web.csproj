@@ -558,6 +558,7 @@
     <Content Include="Content\assets\js\contact.js" />
     <Content Include="Content\assets\js\env.js" />
     <Content Include="Content\assets\js\eventbrite.js" />
+    <Content Include="Content\assets\js\googlemap.js" />
     <Content Include="Content\assets\js\scripts.js" />
     <Content Include="Content\assets\js\view\demo.camera_slider.js" />
     <Content Include="Content\assets\js\view\demo.elastic_slider.js" />
@@ -3621,6 +3622,7 @@
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Views\Resources\View.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CCBOR.Core\CCBOR.Core.csproj">
