@@ -246,10 +246,10 @@
 	section.theme-color div.heading-title h6 span {
 		color:#fff;
 	}
-	section.theme-color a {
-		color:#fff;
-		text-decoration:none;
-	}
+    section.theme-color a {
+        color: #ff6600;
+        text-decoration: none;
+    }
 	section.theme-color a:hover {
 		color:#111;
 	}
