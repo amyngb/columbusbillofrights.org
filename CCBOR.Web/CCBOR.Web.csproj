@@ -141,20 +141,23 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BlogController.cs" />
-    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\EventsController.cs" />
     <Compile Include="Controllers\HelpOutController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MediaController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Controllers\OurWorkController.cs" />
     <Compile Include="Controllers\ResourcesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\NotificationModels.cs" />
+    <Compile Include="Models\SiteModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\assets\css\color_scheme\blue.css" />
+    <Content Include="Content\assets\css\custom.css" />
     <Content Include="Content\assets\css\essentials.css" />
     <Content Include="Content\assets\css\header-1.css" />
     <Content Include="Content\assets\css\layout.css" />
@@ -169,11 +172,35 @@
     <Content Include="Content\assets\images\CCBOR-02.PNG" />
     <Content Include="Content\assets\images\CCBOR-03.jpg" />
     <Content Include="Content\assets\images\CCBOR-04.jpg" />
+    <Content Include="Content\assets\images\ccbor-help-out-01.jpg" />
+    <Content Include="Content\assets\images\ccbor-help-out-02.jpg" />
+    <Content Include="Content\assets\images\ccbor-help-out-03.jpg" />
+    <Content Include="Content\assets\images\ccbor-help-out-04.jpg" />
     <Content Include="Content\assets\images\columbus-bill-of-rights-logo-02.png" />
     <Content Include="Content\assets\images\columbus-bill-of-rights-logo.JPG" />
     <Content Include="Content\assets\images\columbus-bill-of-rights-logo.png" />
     <Content Include="Content\assets\images\green-min.jpg" />
     <Content Include="Content\assets\images\lightblue-min.jpg" />
+    <Content Include="Content\assets\images\loaders\1.gif" />
+    <Content Include="Content\assets\images\loaders\10.gif" />
+    <Content Include="Content\assets\images\loaders\10s.gif" />
+    <Content Include="Content\assets\images\loaders\1s.gif" />
+    <Content Include="Content\assets\images\loaders\2.gif" />
+    <Content Include="Content\assets\images\loaders\2s.gif" />
+    <Content Include="Content\assets\images\loaders\3.gif" />
+    <Content Include="Content\assets\images\loaders\3s.gif" />
+    <Content Include="Content\assets\images\loaders\4.gif" />
+    <Content Include="Content\assets\images\loaders\4s.gif" />
+    <Content Include="Content\assets\images\loaders\5.gif" />
+    <Content Include="Content\assets\images\loaders\5s.gif" />
+    <Content Include="Content\assets\images\loaders\6.gif" />
+    <Content Include="Content\assets\images\loaders\6s.gif" />
+    <Content Include="Content\assets\images\loaders\7.gif" />
+    <Content Include="Content\assets\images\loaders\7s.gif" />
+    <Content Include="Content\assets\images\loaders\8.gif" />
+    <Content Include="Content\assets\images\loaders\8s.gif" />
+    <Content Include="Content\assets\images\loaders\9.gif" />
+    <Content Include="Content\assets\images\loaders\9s.gif" />
     <Content Include="Content\assets\images\mdl-2-min.jpg" />
     <Content Include="Content\assets\images\mdl-art-min.jpg" />
     <Content Include="Content\assets\images\mdl-blue-min.jpg" />
@@ -181,6 +208,7 @@
     <Content Include="Content\assets\images\mdl-min.jpg" />
     <Content Include="Content\assets\images\Mosher4.JPG" />
     <Content Include="Content\assets\images\n4.png" />
+    <Content Include="Content\assets\images\ODS.png" />
     <Content Include="Content\assets\images\parallax-transp.jpg" />
     <Content Include="Content\assets\images\parallax.jpg" />
     <Content Include="Content\assets\images\particles_bg.jpg" />
@@ -191,6 +219,7 @@
     <Content Include="Content\assets\images\UpperScioto_Columbus\UpperScioto_Columbus-1.jpg" />
     <Content Include="Content\assets\images\wall2.jpg" />
     <Content Include="Content\assets\images\wall3-min.jpg" />
+    <Content Include="Content\assets\images\We-The-People-20.jpg" />
     <Content Include="Content\assets\images\yellow-min.jpg" />
     <Content Include="Content\assets\images\_smarty\1x1.png" />
     <Content Include="Content\assets\images\_smarty\avatar.png" />
@@ -555,21 +584,10 @@
     <Content Include="Content\assets\images\_smarty\transparent.png" />
     <Content Include="Content\assets\images\_smarty\user-min.jpg" />
     <Content Include="Content\assets\images\_smarty\world-map.png" />
-    <Content Include="Content\assets\js\contact.js" />
     <Content Include="Content\assets\js\env.js" />
     <Content Include="Content\assets\js\eventbrite.js" />
     <Content Include="Content\assets\js\scripts.js" />
-    <Content Include="Content\assets\js\view\demo.camera_slider.js" />
-    <Content Include="Content\assets\js\view\demo.elastic_slider.js" />
-    <Content Include="Content\assets\js\view\demo.graphs.flot.js" />
-    <Content Include="Content\assets\js\view\demo.layerslider_slider.js" />
-    <Content Include="Content\assets\js\view\demo.nivo_slider.js" />
-    <Content Include="Content\assets\js\view\demo.portfolio_ajax.js" />
     <Content Include="Content\assets\js\view\demo.revolution_slider.js" />
-    <Content Include="Content\assets\js\view\demo.shop.js" />
-    <Content Include="Content\assets\js\view\demo.swiper_slider.js" />
-    <Content Include="Content\assets\js\view\pack_hotel.js" />
-    <Content Include="Content\assets\js\view\pack_realestate.js" />
     <Content Include="Content\assets\plugins\bootstrap.datepicker\css\bootstrap-datepicker.css" />
     <Content Include="Content\assets\plugins\bootstrap.datepicker\css\bootstrap-datepicker.min.css" />
     <Content Include="Content\assets\plugins\bootstrap.datepicker\css\bootstrap-datepicker.standalone.css" />
@@ -3332,19 +3350,6 @@
     <Content Include="Content\assets\plugins\spectrum\spectrum.css" />
     <Content Include="Content\assets\plugins\spectrum\spectrum.js" />
     <Content Include="Content\assets\plugins\spectrum\spectrum.min.js" />
-    <Content Include="Content\assets\plugins\styleswitcher\color_schemes\1.png" />
-    <Content Include="Content\assets\plugins\styleswitcher\color_schemes\10.png" />
-    <Content Include="Content\assets\plugins\styleswitcher\color_schemes\2.png" />
-    <Content Include="Content\assets\plugins\styleswitcher\color_schemes\3.png" />
-    <Content Include="Content\assets\plugins\styleswitcher\color_schemes\4.png" />
-    <Content Include="Content\assets\plugins\styleswitcher\color_schemes\5.png" />
-    <Content Include="Content\assets\plugins\styleswitcher\color_schemes\6.png" />
-    <Content Include="Content\assets\plugins\styleswitcher\color_schemes\7.png" />
-    <Content Include="Content\assets\plugins\styleswitcher\color_schemes\8.png" />
-    <Content Include="Content\assets\plugins\styleswitcher\color_schemes\9.png" />
-    <Content Include="Content\assets\plugins\styleswitcher\sample.html" />
-    <Content Include="Content\assets\plugins\styleswitcher\styleswitcher.css" />
-    <Content Include="Content\assets\plugins\styleswitcher\styleswitcher.js" />
     <Content Include="Content\assets\plugins\text-rotator\demo.html" />
     <Content Include="Content\assets\plugins\text-rotator\jquery.simple-text-rotator.js" />
     <Content Include="Content\assets\plugins\text-rotator\jquery.simple-text-rotator.min.js" />
@@ -3515,7 +3520,9 @@
     <Content Include="Content\assets\plugins\slider.swiper\dist\js\maps\swiper.jquery.min.js.map" />
     <Content Include="Content\assets\plugins\slider.swiper\dist\js\maps\swiper.jquery.umd.min.js.map" />
     <Content Include="Content\assets\plugins\slider.swiper\dist\js\maps\swiper.min.js.map" />
-    <Content Include="Content\assets\plugins\styleswitcher\color_schemes\color_scheme.fla" />
+    <Content Include="Logs\Errors\2018\05\14\errors_20180514_0953.txt" />
+    <Content Include="Scripts\Custom\Common.js" />
+    <Content Include="Scripts\Custom\Contact.js" />
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.min.js" />
     <Content Include="Scripts\esm\popper.js" />
@@ -3572,10 +3579,10 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\assets\plugins\slider.layerslider\plugins\debug\" />
-    <Folder Include="Models\" />
-    <Folder Include="Scripts\Custom\" />
+    <Folder Include="Logs\Activity\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\assets\images\UpperScioto_Columbus.pdf" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_TopBar.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />
@@ -3589,7 +3596,6 @@
     <Content Include="Views\Events\Index.cshtml" />
     <Content Include="Views\Blog\Index.cshtml" />
     <Content Include="Views\Media\Index.cshtml" />
-    <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Scripts\esm\popper.min.js.map" />
     <Content Include="Scripts\esm\popper.js.map" />
     <Content Include="Scripts\esm\popper-utils.min.js.map" />
@@ -3621,6 +3627,9 @@
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Views\News\Index.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Shared\_ShowWaitModal.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CCBOR.Core\CCBOR.Core.csproj">

@@ -1,7 +1,51 @@
-﻿
-@{
-    ViewBag.Title = "Donate";
+﻿@{
+    ViewBag.Title = "Donate To The Columbus Community Bill of Rights";
 }
-
-<h2>Donate</h2>
-
+<section class="page-header page-header-xlg parallax parallax-3"
+         style="background-image:url('@Url.Content("~/Content/assets/images/15-min.jpg")')">
+    <div class="overlay dark-4"></div>
+    <div class="container">
+        <h1>Donate</h1>
+        <ol class="breadcrumb">
+            <li><a href="@Url.Action("Index","Home")">Home</a></li>
+            <li><a href="@Url.Action("Index","HelpOut")">Help Out</a></li>
+            <li class="active">Donate</li>
+        </ol>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2>Donating To Our Effort</h2>
+        <div>
+            <p>
+                How To Donate (we offer two methods)
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Method 1</h3>
+                <p>Donate via PayPal</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Method 2</h3>
+                <p>(alternate method)</p>
+                <p>
+                    Donate via downloading donation form and mailing donated check with form to our P.O. Box:
+                </p>
+                <p>
+                    Download the donation form by clicking on the "W" icon below, print it and fill it out.
+                </p>
+                <p>
+                    Make your check out to "CCBOR PAC" or
+                    "Columbus Community Bill of Rights PAC".
+                </p>
+                <p>
+                    Mail the check and donation form to:
+                    Columbus Community Bill of Rights
+                    P.O. Box 14741
+                    Columbus, OH  43214
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

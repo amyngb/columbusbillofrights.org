@@ -1,16 +1,6 @@
 /** ********************************************** **
-	@Author			Dorin Grigoras
-	@Website		www.stepofweb.com
-	@Last Update	Thursay, February 22, 2018
-
-	NOTE! 	Do not change anything here if you want to
-			be able to update in the future! Please use
-			your custom script (eg. custom.js).
-
-
 	TABLE CONTENTS
 	-------------------------------
-
 
 	INLINE SCRIPTS
 	-------------------------------
@@ -2839,65 +2829,65 @@
 
 					if(jQuery().validate) {
 
-						jQuery('form.validate').each(function() {
+						//jQuery('form.validate').each(function() {
 
-							var _t 			= jQuery(this),
-								_Smessage 	= _t.attr('data-success') 			|| "Successfully! Thank you!",
-								_Cmessage 	= _t.attr('data-captcha') 			|| "Invalid Captcha!",
-								_Tposition 	= _t.attr('data-toastr-position') 	|| "top-right",
-								_Ttype	 	= _t.attr('data-toastr-type') 		|| "success";
-								_Turl	 	= _t.attr('data-toastr-url') 		|| false;
+						//	var _t 			= jQuery(this),
+						//		_Smessage 	= _t.attr('data-success') 			|| "Successfully! Thank you!",
+						//		_Cmessage 	= _t.attr('data-captcha') 			|| "Invalid Captcha!",
+						//		_Tposition 	= _t.attr('data-toastr-position') 	|| "top-right",
+						//		_Ttype	 	= _t.attr('data-toastr-type') 		|| "success";
+						//		_Turl	 	= _t.attr('data-toastr-url') 		|| false;
 
-							// Append 'is_ajax' hidden input field!
-							_t.append('<input type="hidden" name="is_ajax" value="true" />');
+						//	// Append 'is_ajax' hidden input field!
+						//	_t.append('<input type="hidden" name="is_ajax" value="true" />');
 
-							_t.validate({
-								submitHandler: function(form) {
+						//	_t.validate({
+						//		submitHandler: function(form) {
 
-									// Show spin icon
-									jQuery(form).find('.input-group-addon').find('.fa-envelope').removeClass('fa-envelope').addClass('fa-refresh fa-spin');
+						//			// Show spin icon
+						//			jQuery(form).find('.input-group-addon').find('.fa-envelope').removeClass('fa-envelope').addClass('fa-refresh fa-spin');
 
-									jQuery(form).ajaxSubmit({
+						//			jQuery(form).ajaxSubmit({
 
-										target: 	jQuery(form).find('.validate-result').length > 0 ? jQuery(form).find('.validate-result') : '',
+						//				target: 	jQuery(form).find('.validate-result').length > 0 ? jQuery(form).find('.validate-result') : '',
 
-										error: 		function(data) { 
-											_toastr("Sent Failed!",_Tposition,"error",false);
-										},
+						//				error: 		function(data) { 
+						//					_toastr("Sent Failed!",_Tposition,"error",false);
+						//				},
 
-										success: 	function(data) {
-											var data = data.trim();
+						//				success: 	function(data) {
+						//					var data = data.trim();
 
-											// SMTP ERROR
-											if(data == '_failed_') {
-												_toastr("SMTP ERROR! Please, check your config file!",_Tposition,"error",false);
-											}
+						//					// SMTP ERROR
+						//					if(data == '_failed_') {
+						//						_toastr("SMTP ERROR! Please, check your config file!",_Tposition,"error",false);
+						//					}
 
-											// CAPTCHA ERROR
-											else if(data == '_captcha_') {
-												_toastr("Invalid Captcha!",_Tposition,"error",false);
+						//					// CAPTCHA ERROR
+						//					else if(data == '_captcha_') {
+						//						_toastr("Invalid Captcha!",_Tposition,"error",false);
 
 
-											// SUCCESS
-											} else {
+						//					// SUCCESS
+						//					} else {
 
-												// Remove spin icon
-												jQuery(form).find('.input-group-addon').find('.fa-refresh').removeClass('fa-refresh fa-spin').addClass('fa-envelope');
+						//						// Remove spin icon
+						//						jQuery(form).find('.input-group-addon').find('.fa-refresh').removeClass('fa-refresh fa-spin').addClass('fa-envelope');
 
-												// Clear the form
-												jQuery(form).find('input.form-control').val('');
+						//						// Clear the form
+						//						jQuery(form).find('input.form-control').val('');
 
-												// Toastr Message
-												_toastr(_Smessage,_Tposition,_Ttype,_Turl);
+						//						// Toastr Message
+						//						_toastr(_Smessage,_Tposition,_Ttype,_Turl);
 											
-											}
-										}
-									});
+						//					}
+						//				}
+						//			});
 
-								}
-							});
+						//		}
+						//	});
 
-						});
+						//});
 
 					}
 

@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Contact Columbus Community Bill of Rights";
+}
+@section AddToHead{
+    <link rel="stylesheet" href="~/Content/assets/plugins/toastr/toastr.css">
+}
+<section id="contact">
+    <div class="container text-center">
+        <h1 class="m-0 fs-50 fw-300 wow fadeInUp" data-wow-delay="0.4s">Contact</h1>
+        <p class="lead font-lato fs-30 wow fadeInUp" data-wow-delay="0.7s">Columbus Community Bill of Rights</p>
+        <div class="mt-30">
+            <a href="@Url.Action("Donate","HelpOut")" class="btn btn-3d btn-lg btn-green"><i class="glyphicon glyphicon-piggy-bank"></i>DONATE NOW</a>
+            <span class="fs-17 hidden-xs-down">&nbsp; AND &nbsp;</span>
+            <a href="@Url.Action("Index","HelpOut")" class="btn btn-3d btn-lg btn-primary"><i class="glyphicon glyphicon-user"></i>HELP OUT</a>
+        </div>
+    </div>
+</section>
+<div class="container mt-20">
+    <h2>Contact Columbus Community Bill of Rights</h2>
+    <div>
+        <form id="contactForm" method="post">
+            <fieldset>
+                <div class="row">
+                    <div class="col-md-4">
+                        <input type="text" value="" class="form-control" name="FullName" id="fullName" placeholder="Full Name">
+                    </div>
+                    <div class="col-md-4">
+                        <input type="email" value="" class="form-control" name="EmailAddress" id="emailAddress" placeholder="Email Address">
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" value="" class="form-control masked" name="PhoneNumber" id="phoneNumber"
+                               data-format="(999) 999-9999" data-placeholder="X" placeholder="Phone Number">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="text" value="" class="form-control" name="Subject" id="subject" placeholder="Subject">
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <label for="contact:message">Message *</label>
+                    <textarea required maxlength="10000" rows="8" class="form-control" name="Message" id="message"></textarea>
+                </div>
+            </fieldset>
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> SEND MESSAGE</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+@section scripts
+{
+    <script type="text/javascript">
+        var urlContact = {
+            SendContactForm: '@Url.Action("SendContactForm","Home")'
+        };
+        var modelContact = @Html.Raw(@Model.modelContact);
+    </script>
+    <script type="text/javascript" src="@Url.Content("~/Scripts/Custom/Contact.js")"></script>
+}
