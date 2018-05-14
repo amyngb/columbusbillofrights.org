@@ -3,14 +3,15 @@
     ViewBag.Title = "EPA";
 }
 
+
 <section class="page-header page-header-xlg parallax parallax-3"
          style="background-image:url('@Url.Content("~/Content/assets/images/15-min.jpg")')">
     <div class="overlay dark-4"></div>
     <div class="container">
         <h1>2017 Ohio EPA oil/gas production waste rules proposal</h1>
         <ol class="breadcrumb">
-            <li><a href="~/Views/Home/Index.cshtml">Home</a></li>
-            <li><a href="~/Views/OurWork/Index.cshtml">Our Work</a></li>
+            <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+            <li><a href="@Url.Action("Index", "Resources")">Resources</a></li>
             <li class="active">Ohio EPA</li>
         </ol>
     </div>
@@ -28,12 +29,54 @@
             While we welcome new regulation by the EPA to monitor these wastes that were deregulated by the Ohio legislature in 2013, we feel that they give a false sense of security to the public.  The proposed methods of monitoring and detection cannot be sensitive to radiation levels anywhere close to the drinking water limits the EPA has set for Ohio materials.  We feel, therefore, that these new regulations do a very poor job of protecting our water and land resources, as well as solid waste facility workers and truck drivers.
         </p>
         <p>
-           <a href="http://docs.wixstatic.com/ugd/d264fd_d099fca3352c42168389bdc0174f070a.pdf" target="_blank">Here</a> is a comment letter from local geologist/consultant Dr. Julie Weatherington-Rice presenting an argument for stronger state regulations in the frack waste dumping industry.
-        </p>        
+            <a href="http://docs.wixstatic.com/ugd/d264fd_d099fca3352c42168389bdc0174f070a.pdf" target="_blank">Here</a> is a comment letter from local geologist/consultant Dr. Julie Weatherington-Rice presenting an argument for stronger state regulations in the frack waste dumping industry.
+        </p>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2>
+            Should Columbus residents accept Ohio's decision to allow the oil/gas industry to dispose of radioactive shale drill cuttings in our city?
+        </h2>
+        <p>
+            <small>
+                4/20/16 by Greg Pace
+                updated 12/8/17
+            </small>
+        </p>
+        @Html.Partial("Shared/_AlumCreekMap")
+        <p>
+            <a href="https://www.fractracker.org/2015/08/landfill-disposal-wv-waste/" target="_blank">This article,</a> published on the FracTracker Alliance website, refers to the same radiological test protocol that Ohio EPA sanctions for measuring radioactive activity levels in shale waste, both liquid and solid.  Grass roots groups in Ohio have been trying to quantify why the EPA uses the 900 series protocol, specifically the 901.1, to test frack waste samples.  Members of several organizations, and including local central Ohio geologist Julie Weatherington-Rice PhD, have been stymied  trying to determine the criteria the EPA uses to justify the use of this protocol.  This is one area where our correspondence with ODNR (Ohio Dept. of Natural Resources), EPA, and Ohio Dept. of Health (ODH) has led us into the proverbial hole of doubt – nowhere that is meaningful.
+        </p>
+        <p>
+            This is exactly the issue that our Columbus Community Bill of Rights was created to protect Columbus residents from.  The <a href="http://www.soilrecycling.com/services/" target="_blank">Intergrity Drive Ohio Soil Recycling (OSR) facility</a>, located in southeast Columbus adjacent to the Alum Creek, used this very 901.1 protocol to demonstrate that samples from two truckloads of shale drill cuttings delivered by Chesapeake Energy in 2012 were within EPA drinking water limits for radium 226 and other radiologicals.  The article to the right supports our suspicions that the basis for disposing of shale drill cuttings in Ohio facilities, not designed to accept regulated radioactive waste, is derived from improperly-derived information.  This, incidentally, is convenient for the oil/gas industry because it allows them to continue to dump on communities in Ohio.  This is not a short-term legacy - loads dumped that may spike with higher levels of radium contained in them will leave a long-term legacy of risk for the region’s inhabitants, as radium 226 has a half-life of 1600 years.  This element is water-soluble, and bone-seeking when ingested. Radium 226 is linked to leukemia, as well as other health disorders.
+        </p>
+        <p>
+            In 2014, University of Iowa <a href="http://www.sciencemag.org/news/2015/04/study-raises-questions-about-measuring-radioactivity-fracking-wastewater" target="_blank">published a study</a> indicating that protocols used are mismatched for the task of measuring radioactivity in these materials.  It showed that the radium testing protocol used <a href="https://cen.acs.org/articles/92/web/2014/03/Analytical-Test-Underestimate-Radioactivity-Fracking.html" target="_blank">can underestimate radium 226/228 levels in samples by as much as 99%</a>.
+        </p>
+        <p>
+            In  2013,  <a href="http://www.dispatch.com/content/stories/local/2014/01/27/radioactive-threat.html" target="_blank">224 truckloads of shale drill cuttings</a> being delivered to Pennsylvania landfills triggered radioactive alarms.  The landfills did not accept the truckloads which then had to be returned to their source.  Several truckloads have been turned away from Ohio landfills that have monitoring devices as well, one load measured at <a href="http://banmichiganfracking.org/wp-content/uploads/2012/01/OHIO-FACT-SHEET-6-13-13.pdf" target="_blank">36 times the EPA limit.</a>
+        </p>
+        <p>
+            We assert that the process used by the Ohio Soil Recycling facility to remediate brownfield soil does not have the capability to reliably remove radioactive content as it removes hydrocarbon materials and residues.  As of today, we understand that, although Chesapeake did their pilot study in 2012-2013, OSR have not begun to accept drill cuttings at the Columbus site … however the EPA authorization stands to allow it at any time.  OSR has partnered with <a href="http://emsonsite.com/environmental-services/oil-gas/shale-recycling/" target="_blank">Environmental Management Services,</a> and is in the process of using other sites to remediate cuttings in eastern Ohio, using the same  process.
+        </p>
+        <p>
+            West Virginia, where the study referred to by the article was done, uses mono-cells in all landfills that accept shale drill cuttings.  Pennsylvania and Michigan use mono-cells as well.  The wastes are quarantined in the mono-cells to prevent combining with other wastes, and from  leaching into the ground and water tables.  WV monitors the leachates as well, although the study outlined in the FracTracker article puts the protocol used into question.  Ohio has completely de-regulated the radioactive content of the shale drill cuttings, meaning that the radium, uranium, thorium, and other heavy metals are “out of sight, out of mind” to the regulators.  They can be dumped at any licensed landfills in Ohio with absolutely no radiological testing, monitoring, or logging of shipping to indicate where they came from or what type of facilities they were derived from – in-state or out-of-state.
+        </p>
+        <p>
+            We do not understand what sound, scientific basis that our Ohio legislators used when they inserted the language into the 2013 Ohio state two-year budget bill that transformed shale drill cuttings from being classified as TENORM (technically-enhanced naturally-occurring radioactive materials) which is regulated and must be tested/monitored, to NORM (naturally-occurring radioactive materials) which can be treated as if its radioactive levels are at background levels therefore ignored.
+        </p>
+        <p>
+            As we have been led into the regulatory black hole of doubt by our regulatory environment, we cannot accept these materials to be disposed of within the city limits of Columbus, putting our water, air, and soil at long-term risk of radioactive contamination.
+        </p>
     </div>
 </section>
 
 
+@section scripts {
+    <script src="~/Content/assets/js/env.js"></script>
+    <script src="~/Content/assets/js/googlemap.js"></script>
+}
 
 
 
