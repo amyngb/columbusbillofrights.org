@@ -3,5 +3,43 @@
     ViewBag.Title = "Apparel";
 }
 
-<h2>Apparel</h2>
-
+<section class="page-header page-header-xlg parallax parallax-3"
+         style="background-image:url('@Url.Content("~/Content/assets/images/15-min.jpg")')">
+    <div class="overlay dark-4"></div>
+    <div class="container">
+        <h1>Apparel</h1>
+        <ol class="breadcrumb">
+            <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+            <li><a href="@Url.Action("Index", "HelpOut")">Help Out</a></li>
+            <li class="active">Apparel</li>
+        </ol>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xs-12 col-sm-10 col-md-8">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h3>Support Us and get a free T-shirt</h3>
+                    </div>
+                    <div class="card-body text-center">
+                        <p>
+                            With each $35 donation you can receive this artistic, sustainable Hemp and Organic Cotton T shirt honoring our work to protect Ohio's Water, Air & Soil and promote clean, renewable energy.
+                        </p>
+                        <img class="img-fluid" src="~/Content/assets/images/CCBOR-T-Shirt.jpg" />
+                        <p>
+                            All proceeds go to the Columbus Community Bill of Rights
+                        </p>
+                        <p>
+                            Pure Water, Clean Air, Safe Soil and Local Control.
+                        </p>
+                    </div>
+                    <div class="card-footer text-center">
+                        @Html.Partial("~/Views/HelpOut/Shared/_PayPalDonate.cshtml")
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
