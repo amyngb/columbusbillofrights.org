@@ -586,6 +586,7 @@
     <Content Include="Content\assets\images\_smarty\world-map.png" />
     <Content Include="Content\assets\js\env.js" />
     <Content Include="Content\assets\js\eventbrite.js" />
+    <Content Include="Content\assets\js\googlemap.js" />
     <Content Include="Content\assets\js\scripts.js" />
     <Content Include="Content\assets\js\view\demo.revolution_slider.js" />
     <Content Include="Content\assets\plugins\bootstrap.datepicker\css\bootstrap-datepicker.css" />
@@ -3373,6 +3374,7 @@
     <Content Include="Content\assets\plugins\widget.jflickr\setup.js" />
     <Content Include="Content\assets\plugins\widget.jflickr\style.css" />
     <Content Include="Content\assets\plugins\widget.twittie\twittie.min.js" />
+    <Content Include="Content\assets\videos\wereAllDownstream_v9.mp4" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="ApplicationInsights.config">

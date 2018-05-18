@@ -23,6 +23,9 @@
                     <div class="text-center">
                         <p><strong>The Campaign For</strong></p>
                         <p><strong>The Columbus Community Bill of Rights</strong></p>
+                        <video width="2000" height="600" autoplay controls="controls" style="max-width:100%; height: auto;">
+                            <source src="~/Content/assets/videos/wereAllDownstream_v9.mp4" type="video/mp4">
+                        </video>
                     </div>
                     <div>
                         <p>
@@ -55,6 +58,10 @@
         <h2>
             Resources
         </h2>
+        <p>We are working hard to ensure safe drinking water, clean air, and safe soil in the City of Columbus. </p>
+        <p>
+            <a href="@Url.Action("Index","Resources")" class="btn btn-3d btn-lg btn-white"><i class="glyphicon glyphicon-book"></i>LEARN MORE</a>
+        </p>
     </div>
 </section>
 <section>
@@ -62,6 +69,40 @@
         <h2>
             Help Out
         </h2>
+        <div class="callout alert alert-border alert-info b-0 mt-60 mb-60">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="~/Content/assets/images/ccbor-help-out-01.jpg" />
+                </div>
+                <div class="col-md-8">
+                    <div class="mt-10">
+                        <p>
+                            <strong>
+                                JOIN US FOR OUR NEXT MEETING
+                            </strong>
+                        </p>
+                    </div>
+                    <div class="mt-10">
+                        <p>
+                            <strong>
+                                We have organizing meetings most every week, on Monday evenings at 7:00pm.
+                            </strong>
+                        </p>
+                    </div>
+                    <div class="mt-10">
+                        <p>
+                            <strong>
+                                If interested in attending or for more information, please contact <br />
+                                <a href="mailto:ColumbusBillofRights@gmail.com">ColumbusBillofRights@gmail.com</a>
+                            </strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>
+        <a href="@Url.Action("Index","HelpOut")" class="btn btn-3d btn-lg btn-primary"><i class="glyphicon glyphicon-book"></i>LEARN MORE</a>
+        </p>
     </div>
 </section>
 <section class="alternate">
@@ -69,9 +110,13 @@
         <h2>
             Events
         </h2>
+        <p>To learn more about upcoming events, visit our events page where you can sign up for petitioning, sign our petition, and learn more about our issue.</p>
+        <p>
+            <a href="@Url.Action("Index","Events")" class="btn btn-3d btn-lg btn-primary"><i class="glyphicon glyphicon-book"></i>LEARN MORE</a>
+        </p>
     </div>
 </section>
-<section class="theme-color">
+@*<section class="theme-color">
     <div class="container">
         <h2>
             Blog
@@ -84,4 +129,5 @@
             Media
         </h2>
     </div>
-</section>
+</section>*@
+
