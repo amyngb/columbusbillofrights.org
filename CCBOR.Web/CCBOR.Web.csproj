@@ -3583,6 +3583,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\assets\images\UpperScioto_Columbus.pdf" />
+    <Content Include="Content\assets\docs\DonationForm.docx" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_TopBar.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />
@@ -3630,6 +3631,8 @@
     <Content Include="Views\News\Index.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Shared\_ShowWaitModal.cshtml" />
+    <Content Include="Views\Resources\Shared\_AlumCreekMap.cshtml" />
+    <Content Include="Views\HelpOut\Shared\_PayPalDonate.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CCBOR.Core\CCBOR.Core.csproj">

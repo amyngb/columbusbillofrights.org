@@ -63,9 +63,9 @@ namespace CCBOR.Web.Models
                 );
 
             emailer.Host = Convert.ToString("mail.jeffgildone.com");
-            //emailer.Port = Convert.ToInt32(25);
+            emailer.Port = Convert.ToInt32(25);
             //emailer.Port = Convert.ToInt32(465);
-            emailer.Port = Convert.ToInt32(587);
+            //emailer.Port = Convert.ToInt32(587);
             emailer.DefaultCredentials = Convert.ToString("0").Trim();
             emailer.UserName = Convert.ToString("Notify@jeffgildone.com");
             emailer.Password = Convert.ToString("P@ssword2017");
