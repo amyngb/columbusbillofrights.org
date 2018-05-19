@@ -1,0 +1,5 @@
+5/19/2018 8:53:34 AM	ERROR - Sending Email: ex.Message-Mailbox unavailable. The server response was: From domain must match authenticated domain ex.Inner- ex.StackTrace   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   at System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at CCBOR.Core.Emailer.SendMail(Emailer emailer) in C:\JMG Software\Clients\CCBOR\Website\CCBOR.Core\Emailer.cs:line 286
