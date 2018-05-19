@@ -36,5 +36,13 @@ namespace CCBOR.Web.Controllers
             return Json(isContactFormSent);
         }
 
+        [HttpPost]
+        public ActionResult SubscribeToNewsletter(String emailAddress)
+        {
+            Boolean isSubscribed = false;
+            isSubscribed = Newsletter.Subscribe(emailAddress);
+            return Json(isSubscribed);
+        }
+
     }
 }

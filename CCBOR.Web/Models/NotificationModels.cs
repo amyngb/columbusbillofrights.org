@@ -86,4 +86,25 @@ namespace CCBOR.Web.Models
 
     }
 
+    public class Newsletter
+    {
+        [Required]
+        [EmailAddress]
+        public String EmailAddress { get; set; }
+
+        public static Boolean Subscribe(String emailAddress)
+        {
+            Boolean isSubscribed = false;
+
+            if (!Data.Notifications.DoesNewsletterSubscriberExist(emailAddress))
+            {
+                String newId = Data.Notifications.CreateNewsletterSubscriber(emailAddress);
+                if (newId != String.Empty)
+                {
+                    isSubscribed = true;
+                }
+            }
+            return isSubscribed;
+        }
+    }
 }

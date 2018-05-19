@@ -46,8 +46,18 @@
         @Html.Partial("~/Views/Shared/_ShowWaitModal.cshtml")
     </div>
 
-    <script>var plugin_path = '@Url.Content("~/Content/assets/plugins/")';</script>
+    <script>
+        var plugin_path = '@Url.Content("~/Content/assets/plugins/")';
+         var urlCommon = {
+            SubscribeToNewsletter: '@Url.Action("SubscribeToNewsletter", "Home")'
+        };
+    </script>
+
     <script src="~/Content/assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+    <script src="~/Content/assets/plugins/form.validate/jquery.form.min.js"></script>
+    <script src="~/Content/assets/plugins/form.validate/jquery.validation.min.js"></script>
+    <script src="~/Content/assets/plugins/toastr/toastr.js"></script>
+
     <script src="~/Content/assets/js/scripts.js"></script>
     <script src="~/Scripts/Custom/Common.js"></script>
 
@@ -56,5 +66,6 @@
     <script src="~/Content/assets/js/view/demo.revolution_slider.js"></script>
 
     @RenderSection("scripts", required: false)
+
 </body>
 </html>
