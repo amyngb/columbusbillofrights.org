@@ -177,10 +177,7 @@
     <Content Include="Content\assets\images\ccbor-help-out-02.jpg" />
     <Content Include="Content\assets\images\ccbor-help-out-03.jpg" />
     <Content Include="Content\assets\images\ccbor-help-out-04.jpg" />
-<<<<<<< HEAD
-=======
     <Content Include="Content\assets\images\CCBOR-T-Shirt-Donate.jpg" />
->>>>>>> 989ab0143e00318bca956ef5ecf8618ccf05b5ca
     <Content Include="Content\assets\images\CCBOR-T-Shirt.jpg" />
     <Content Include="Content\assets\images\CHPNY-logo-460px.png" />
     <Content Include="Content\assets\images\columbus-bill-of-rights-logo-02.png" />
@@ -3590,6 +3587,7 @@
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
     <Content Include="Scripts\respond.js" />
   </ItemGroup>
+
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\assets\plugins\slider.layerslider\plugins\debug\" />
@@ -3712,4 +3710,5 @@
   </Target>
   <Target Name="AfterBuild">
   </Target> -->
+  
 </Project>

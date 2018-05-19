@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
 
-    var token = '6UZUTYLSI7UQEOFSLIEL';
-    var orgId = '17265888069'
+    var token = 'J6EPDFRMRGSIVZELBG7U';
+    var orgId = '17349739952'
     var $events = $("#eventBrite");
 
     $.get('https://www.eventbriteapi.com/v3/events/search/?token=' + token + '&organizer.id=' + orgId + '&expand=venue', function (res) {
