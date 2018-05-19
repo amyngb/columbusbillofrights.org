@@ -23,9 +23,7 @@
                     <div class="text-center mb-30">
                         <p><strong>The Campaign For</strong></p>
                         <p><strong>The Columbus Community Bill of Rights</strong></p>
-                        <video width="2000" height="600" autoplay controls="controls" style="max-width:100%; height: auto;">
-                            <source src="~/Content/assets/videos/wereAllDownstream_v9.mp4" type="video/mp4">
-                        </video>
+                        @Html.Partial("~/Views/OurWork/Shared/_UpstreamVideo.cshtml")
                     </div>
                     <div>
                         <p>
@@ -58,7 +56,7 @@
         <h2>
             Resources
         </h2>
-        <p>We are working hard to ensure safe drinking water, clean air, and safe soil in the City of Columbus. </p>
+        <p>Learn more about our effort to ensure safe drinking water, clean air, and safe soil in the City of Columbus. </p>
         <p>
             <a href="@Url.Action("Index","Resources")" class="btn btn-3d btn-lg btn-white"><i class="glyphicon glyphicon-book"></i>LEARN MORE</a>
         </p>

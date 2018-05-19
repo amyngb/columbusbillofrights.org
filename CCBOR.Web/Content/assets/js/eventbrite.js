@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
 
-    var token = '6UZUTYLSI7UQEOFSLIEL';
-    var orgId = '17265888069'
+    var token = 'J6EPDFRMRGSIVZELBG7U';
+    var orgId = '17349739952'
     var $events = $("#eventBrite");
 
     $.get('https://www.eventbriteapi.com/v3/events/search/?token=' + token + '&organizer.id=' + orgId + '&expand=venue', function (res) {
@@ -21,12 +21,14 @@
                 date = displayDate(event.start.local);
                 if (event.description != null)
                     descr = truncateString(event.description.text, 100);
-                if (event.venue.name != null)
+                if (event.venue.name != null) {
                     venue = event.venue.name + '</br>';
-                if (event.venue.address.localized_multi_line_address_display.length != 0) {
-                    address = event.venue.address.localized_multi_line_address_display[0]
-                        + '</br>' + event.venue.address.localized_multi_line_address_display[1];
+                    if (event.venue.address.localized_multi_line_address_display.length != 0) {
+                        address = event.venue.address.localized_multi_line_address_display[0]
+                            + '</br>' + event.venue.address.localized_multi_line_address_display[1];
+                    }
                 }
+                   
 
                 eventDisp = '<div class="col-xs-12 col-sm-6 col-md-3"><div class="card"><div class="card-header text-center"><h3>'
                     + event.name.text
