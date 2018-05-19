@@ -11,7 +11,7 @@
         <div class="mt-30">
             <a href="@Url.Action("Donate","HelpOut")" class="btn btn-3d btn-lg btn-green"><i class="glyphicon glyphicon-piggy-bank"></i>DONATE NOW</a>
             <span class="fs-17 hidden-xs-down">&nbsp; AND &nbsp;</span>
-            <a href="@Url.Action("Index","HelpOut")" class="btn btn-3d btn-lg btn-primary"><i class="glyphicon glyphicon-user"></i>HELP OUT</a>
+            <a href="@Url.Action("Volunteer","HelpOut")" class="btn btn-3d btn-lg btn-primary"><i class="glyphicon glyphicon-user"></i>VOLUNTEER</a>
         </div>
     </div>
 </section>
@@ -27,7 +27,7 @@
                     <p>
                         <strong>
                             JOIN US FOR OUR NEXT MEETING <br />
-                            on Monday, May 14th, 2018 at 7:00pm.
+                            on Monday, May 21st, 2018 at 7:00pm.
                         </strong>
                     </p>
                 </div>
@@ -50,3 +50,33 @@
         </div>
     </div>
 </div>
+<section class="theme-color">
+    <div class="container">
+        <h2>Volunteer</h2>
+        <div class="row">
+            <div class="col-xs-12">
+                <p>
+                    Thank you for helping with our effort here at Columbus Community Bill of Rights. Help us to get our initiatives on the ballot in central Ohio by donating your time and effort to gather signatures from your fellow community-members!!
+                </p>
+                <p>
+                    <a href="@Url.Action("Volunteer","HelpOut")" class="btn btn-3d btn-lg btn-white"><i class="glyphicon glyphicon-book"></i>VOLUNTEER</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2>Donate</h2>
+        <div class="row">
+            <div class="col-xs-12">
+                <p>
+                    If you have financial resources to spare, please donate to our effort.
+                </p>
+                @Html.Partial("~/Views/HelpOut/Shared/_PayPalDonate.cshtml")
+            </div>
+        </div>
+    </div>
+</section>
+@Html.Partial("~/Views/HelpOut/Shared/_VolunteerAtComFest.cshtml")
