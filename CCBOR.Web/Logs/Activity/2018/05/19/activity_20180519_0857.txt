@@ -1,0 +1,10 @@
+5/19/2018 8:57:07 AM	ERROR - Sending Email: ex.Message-Failure sending mail. ex.Inner-System.Net.WebException: The remote name could not be resolved: 'mail.columbusbillofrights.org'
+   at System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   at System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   at System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   at System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   at System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message) ex.StackTrace   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at CCBOR.Core.Emailer.SendMail(Emailer emailer) in C:\JMG Software\Clients\CCBOR\Website\CCBOR.Core\Emailer.cs:line 286

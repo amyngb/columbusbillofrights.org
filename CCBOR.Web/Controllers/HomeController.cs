@@ -21,7 +21,7 @@ namespace CCBOR.Web.Controllers
         {
             dynamic viewModel = new ExpandoObject();
             String metaAuthor = "JMG Software";
-            String metaDescription = "";
+            String metaDescription = "Contact The Columbus Community Bill of Rights";
             String metaKeywords = "";
             viewModel.MetaTags = MetaTags.Fill(metaAuthor, metaDescription, metaKeywords);
             viewModel.modelContact = JsonConvert.SerializeObject(ContactForm.GetDefinition());
