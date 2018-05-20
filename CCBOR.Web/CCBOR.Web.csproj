@@ -3545,6 +3545,11 @@
     <Content Include="Scripts\umd\esm\popper-utils.min.js" />
     <Content Include="Scripts\umd\esm\popper.js" />
     <Content Include="Scripts\umd\esm\popper.min.js" />
+    <Content Include="Scripts\Custom\home.js" />
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.min.js" />
     <Content Include="Scripts\popper-utils.js" />
     <Content Include="Scripts\popper-utils.min.js" />
     <Content Include="Scripts\popper.js" />
