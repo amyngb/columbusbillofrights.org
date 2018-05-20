@@ -3501,58 +3501,58 @@
 	</div>
  **************************************************************** **/
 	function _modalAutoLoad() {
-		if(jQuery("div.modal").length > 0) {
+		//if(jQuery("div.modal").length > 0) {
 
-			jQuery("div.modal").each(function() {
-				var _t 			= jQuery(this),
-					_id			= _t.attr('id'),
-					_autostart 	= _t.attr('data-autoload') || false;
-
-
-				// reset allow
-				// localStorage.removeItem(_id);
+		//	jQuery("div.modal").each(function() {
+		//		var _t 			= jQuery(this),
+		//			_id			= _t.attr('id'),
+		//			_autostart 	= _t.attr('data-autoload') || false;
 
 
-				if(_id != '') { // rewrite if set to hidden by the user
-					if(localStorage.getItem(_id) == 'hidden') {
-						_autostart = 'false';
-					}
-				}
+		//		// reset allow
+		//		// localStorage.removeItem(_id);
 
 
-				if(_autostart == 'true') {
+		//		if(_id != '') { // rewrite if set to hidden by the user
+		//			if(localStorage.getItem(_id) == 'hidden') {
+		//				_autostart = 'false';
+		//			}
+		//		}
 
-					jQuery(window).on("load", function() { // required on load!
-						var _delay = _t.attr('data-autoload-delay') || 1000; // delay when modal apprear
 
-						setTimeout(
-							function()  {
+		//		if(_autostart == 'true') {
 
-								_t.modal('toggle');
+		//			jQuery(window).on("load", function() { // required on load!
+		//				var _delay = _t.attr('data-autoload-delay') || 1000; // delay when modal apprear
 
-						}, parseInt(_delay));
+		//				setTimeout(
+		//					function()  {
 
-					});
+		//						_t.modal('toggle');
 
-				}
+		//				}, parseInt(_delay));
 
-				// LOCAL STORAGE - DO NOT HIDE ON NEXT PAGE LOAD!
-				jQuery("input.loadModalHide", this).bind("click", function() {
-					var _tt = jQuery(this);
+		//			});
+
+		//		}
+
+		//		// LOCAL STORAGE - DO NOT HIDE ON NEXT PAGE LOAD!
+		//		jQuery("input.loadModalHide", this).bind("click", function() {
+		//			var _tt = jQuery(this);
 					
-					if(_tt.is(":checked")) {
-						localStorage.setItem(_id, 'hidden');
-						console.log('[Modal Autoload #'+_id+'] Added to localStorage');
-					} else {
-						localStorage.removeItem(_id);
-						console.log('[Modal Autoload #'+_id+'] Removed from localStorage');
-					}
+		//			if(_tt.is(":checked")) {
+		//				localStorage.setItem(_id, 'hidden');
+		//				console.log('[Modal Autoload #'+_id+'] Added to localStorage');
+		//			} else {
+		//				localStorage.removeItem(_id);
+		//				console.log('[Modal Autoload #'+_id+'] Removed from localStorage');
+		//			}
 
-				});
+		//		});
 
-			});
+		//	});
 
-		}
+		//}
 	}
 
 

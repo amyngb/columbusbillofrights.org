@@ -66,16 +66,16 @@ function initContactForm() {
                         dataType: "json",
                         data: JSON.stringify(modelContact),
                         beforeSend: function () {
-                            ShowWaitModal();
+                            //ShowWaitModal();
                         },
                         success: function (data) {
                             $(form)[0].reset();
                             _toastr("MESSAGE SENT!", "top-full-width", "success", false);
-                            $('#ShowWaitModal').modal('hide');
+                            //$('#ShowWaitModal').modal('hide');
                         },
                         error: function (jqXHR, textStatus, errorThrown) {
                             _toastr("ERROR!", "top-full-width", "error", false);
-                            $('#ShowWaitModal').modal('hide');
+                            //$('#ShowWaitModal').modal('hide');
                             alert("error");
                             alert(jqXHR.responseText);
                         }

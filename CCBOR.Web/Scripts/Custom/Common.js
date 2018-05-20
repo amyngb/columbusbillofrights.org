@@ -4,7 +4,6 @@
 };
 
 jQuery(document).ready(function () {
-
     initSubscribeForm();
 });
 
@@ -41,9 +40,10 @@ function initSubscribeForm() {
                         dataType: "json",
                         data: JSON.stringify(model),
                         beforeSend: function () {
-                            ShowWaitModal();
+                            //ShowWaitModal();
                         },
                         success: function (data) {
+                            //HideShowWaitModal();
                             $(form)[0].reset();
                             if (data) {
                                 _toastr("SUCCESS!", "top-full-width", "success", false);
@@ -51,11 +51,11 @@ function initSubscribeForm() {
                             else {
                                 _toastr("ERROR!", "top-full-width", "error", false);
                             }
-                            $('#ShowWaitModal').modal('hide');
+                            //HideShowWaitModal();
                         },
                         error: function (jqXHR, textStatus, errorThrown) {
+                            //HideShowWaitModal();
                             _toastr("ERROR!", "top-full-width", "error", false);
-                            $('#ShowWaitModal').modal('hide');
                             alert("error");
                             alert(jqXHR.responseText);
                         }
@@ -71,6 +71,10 @@ function initSubscribeForm() {
 function ShowWaitModal() {
     alignShowWaitModal();
     $('#ShowWaitModal').modal('show');
+}
+
+function HideShowWaitModal() {
+    $('#ShowWaitModal').modal('hide');
 }
 
 function alignShowWaitModal() {
