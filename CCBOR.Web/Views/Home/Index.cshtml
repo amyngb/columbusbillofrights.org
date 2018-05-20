@@ -1,6 +1,10 @@
 ﻿@{
     ViewBag.Title = "Columbus Community Bill of Rights";
 }
+@section AddToHead{
+    <link href="~/Content/assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
+}
 @Html.Partial("~/Views/Home/_Slider.cshtml")
 <div class="callout alert alert-info b-0 rad-0 m-0">
     <div class="text-center">
@@ -8,7 +12,7 @@
         <p class="font-lato fs-20">
             We truly care about our environemnt.
         </p>
-        <a href="@Url.Action("Donate","HelpOut")" rel="nofollow" target="_blank" 
+        <a href="@Url.Action("Donate","HelpOut")" rel="nofollow" target="_blank"
            class="btn btn-default btn-lg mt-30">DONATE NOW</a>
     </div>
 </div>
@@ -27,11 +31,11 @@
                     </div>
                     <div>
                         <p>
-                            We began our latest initiative on Monday, June 26th, 2017 to get our Columbus Community Bill of Rights 
+                            We began our latest initiative on Monday, June 26th, 2017 to get our Columbus Community Bill of Rights
                             ordinance on the local ballot for the November 2018 election.
                         </p>
                         <p>
-                            Stay tuned to our newsletter for updates as we continue to engage with city government, and circulate our petitions 
+                            Stay tuned to our newsletter for updates as we continue to engage with city government, and circulate our petitions
                             to Columbus city voters over the next 12 months.
                         </p>
                     </div>
@@ -99,7 +103,7 @@
             </div>
         </div>
         <p>
-        <a href="@Url.Action("Index","HelpOut")" class="btn btn-3d btn-lg btn-primary"><i class="glyphicon glyphicon-book"></i>LEARN MORE</a>
+            <a href="@Url.Action("Index","HelpOut")" class="btn btn-3d btn-lg btn-primary"><i class="glyphicon glyphicon-book"></i>LEARN MORE</a>
         </p>
     </div>
 </section>
@@ -114,18 +118,9 @@
         </p>
     </div>
 </section>
-@*<section class="theme-color">
-    <div class="container">
-        <h2>
-            Blog
-        </h2>
-    </div>
-</section>
-<section>
-    <div class="container">
-        <h2>
-            Media
-        </h2>
-    </div>
-</section>*@
-
+@section scripts
+{
+    <script src="~/Content/assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="~/Content/assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="~/Content/assets/js/view/demo.revolution_slider.js"></script>
+}
