@@ -16,7 +16,7 @@
                 var venue = '';
 
                 event = res.events[i];
-                console.log(event);
+                
 
                 date = displayDate(event.start.local);
                 if (event.description != null)
