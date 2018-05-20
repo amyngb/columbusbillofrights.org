@@ -3536,6 +3536,7 @@
     <Content Include="Logs\Errors\2018\05\14\errors_20180514_0953.txt" />
     <Content Include="Scripts\Custom\Common.js" />
     <Content Include="Scripts\Custom\Contact.js" />
+    <Content Include="Scripts\Custom\home.js" />
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.min.js" />
     <Content Include="Scripts\esm\popper.js" />
