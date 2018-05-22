@@ -189,6 +189,7 @@
     <Content Include="Content\assets\images\columbus-bill-of-rights-logo.JPG" />
     <Content Include="Content\assets\images\columbus-bill-of-rights-logo.png" />
     <Content Include="Content\assets\images\ComFestPoster.jpg" />
+    <Content Include="Content\assets\images\favicon.ico" />
     <Content Include="Content\assets\images\green-min.jpg" />
     <Content Include="Content\assets\images\lightblue-min.jpg" />
     <Content Include="Content\assets\images\loaders\1.gif" />

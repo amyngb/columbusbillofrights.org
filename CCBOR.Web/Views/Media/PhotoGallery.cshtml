@@ -2,3 +2,16 @@
 @{
     ViewBag.Title = "PhotoGallery";
 }
+
+<section class="page-header page-header-xlg parallax parallax-3"
+         style="background-image:url('@Url.Content("~/Content/assets/images/15-min.jpg")')">
+    <div class="overlay dark-4"></div>
+    <div class="container">
+        <h1>PHOTO GALLERY</h1>
+        <ol class="breadcrumb">
+            <li><a href="@Url.Action("Index","Home")">Home</a></li>
+            <li><a href="@Url.Action("Index","Media")">Media</a></li>
+            <li class="active">Photo Gallery</li>
+        </ol>
+    </div>
+</section>
