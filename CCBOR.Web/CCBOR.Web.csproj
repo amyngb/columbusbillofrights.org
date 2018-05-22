@@ -3546,10 +3546,6 @@
     <Content Include="Scripts\umd\esm\popper.js" />
     <Content Include="Scripts\umd\esm\popper.min.js" />
     <Content Include="Scripts\Custom\home.js" />
-    <Content Include="Scripts\esm\popper-utils.js" />
-    <Content Include="Scripts\esm\popper-utils.min.js" />
-    <Content Include="Scripts\esm\popper.js" />
-    <Content Include="Scripts\esm\popper.min.js" />
     <Content Include="Scripts\popper-utils.js" />
     <Content Include="Scripts\popper-utils.min.js" />
     <Content Include="Scripts\popper.js" />
@@ -3603,6 +3599,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Content\assets\plugins\slider.layerslider\plugins\debug\" />
     <Folder Include="Logs\Activity\" />
+    <Folder Include="Scripts\esm\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\assets\images\UpperScioto_Columbus.pdf" />
