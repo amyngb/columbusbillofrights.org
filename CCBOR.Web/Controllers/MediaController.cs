@@ -21,5 +21,9 @@ namespace CCBOR.Web.Controllers
         {
             return View();
         }
+        public ActionResult AudioGallery()
+        {
+            return View();
+        }
     }
 }

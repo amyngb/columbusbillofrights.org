@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "AudioGallery";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="page-header page-header-xlg parallax parallax-3"
+         style="background-image:url('@Url.Content("~/Content/assets/images/15-min.jpg")')">
+    <div class="overlay dark-4"></div>
+    <div class="container">
+        <h1>AUDIO GALLERY</h1>
+        <ol class="breadcrumb">
+            <li><a href="@Url.Action("Index","Home")">Home</a></li>
+            <li><a href="@Url.Action("Index","Media")">Media</a></li>
+            <li class="active">Audio Gallery</li>
+        </ol>
+    </div>
+</section>
+<section class="alternate">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <p><a href="http://www.wcrsfm.org/" target="_blank">94.1 WGRN</a> program – part 1.  The Other Side of the News with Bob Fitrakis. Friday, May 11, 2018</p>
+                <p>Bob interviews Sandy Bolzenius, Bill Lyons and Charlotte Owens about the Columbus Community Bill of Rights that will protect us from fracking pollution </p>
+                <audio controls>
+                    <source src="~/Content/assets/audio/TOSOTN5918-CCBOR.mp3" />
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="col-6">
+                <p><a href="http://www.wcrsfm.org/" target="_blank">94.1 WGRN</a> program – part 1.  The Other Side of the News with Bob Fitrakis. Friday, May 11, 2018</p>
+                <p>Bob interviews Carolyn Harding and Bill Lyons about the Columbus Community Bill of Rights petitioning campaign for citizen's rights to clean air, soil and water. </p>
+                <audio controls>
+                    <source src="~/Content/assets/audio/TOSOT051918-CCBOR.mp3" />
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </div>
+</section>

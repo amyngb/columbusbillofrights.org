@@ -156,6 +156,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\assets\audio\TOSOT051918-CCBOR.mp3" />
+    <Content Include="Content\assets\audio\TOSOTN5918-CCBOR.mp3" />
     <Content Include="Content\assets\css\color_scheme\blue.css" />
     <Content Include="Content\assets\css\custom.css" />
     <Content Include="Content\assets\css\essentials.css" />
@@ -3656,6 +3658,8 @@
     <Content Include="Views\HelpOut\Shared\_PayPalDonate.cshtml" />
     <Content Include="Views\OurWork\Shared\_UpstreamVideo.cshtml" />
     <Content Include="Views\HelpOut\Shared\_VolunteerAtComFest.cshtml" />
+    <Content Include="Views\OurWork\Shared\_WeThePeopleClip.cshtml" />
+    <Content Include="Views\Media\AudioGallery.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CCBOR.Core\CCBOR.Core.csproj">
