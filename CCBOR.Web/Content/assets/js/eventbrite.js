@@ -17,9 +17,9 @@
 
                 event = res.events[i];
                 
-
+                console.log(event);
                 date = displayDate(event.start.local);
-                if (event.description != null)
+                if (event.description.text != null)
                     descr = truncateString(event.description.text, 100);
                 if (event.venue.name != null) {
                     venue = event.venue.name + '</br>';
