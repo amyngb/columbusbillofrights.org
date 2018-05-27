@@ -3542,6 +3542,7 @@
     <Content Include="Content\assets\plugins\slider.swiper\dist\js\maps\swiper.jquery.umd.min.js.map" />
     <Content Include="Content\assets\plugins\slider.swiper\dist\js\maps\swiper.min.js.map" />
     <Content Include="Logs\Errors\2018\05\14\errors_20180514_0953.txt" />
+    <Content Include="robots.txt" />
     <Content Include="Scripts\Custom\Blog.js" />
     <Content Include="Scripts\Custom\Common.js" />
     <Content Include="Scripts\Custom\Contact.js" />
@@ -3558,6 +3559,7 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="sitemap.xml" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
@@ -3661,6 +3663,7 @@
     <Content Include="Views\HelpOut\Shared\_VolunteerAtComFest.cshtml" />
     <Content Include="Views\OurWork\Shared\_WeThePeopleClip.cshtml" />
     <Content Include="Views\Media\AudioGallery.cshtml" />
+    <Content Include="Views\Shared\_GA.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CCBOR.Core\CCBOR.Core.csproj">

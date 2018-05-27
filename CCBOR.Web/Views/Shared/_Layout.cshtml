@@ -13,6 +13,7 @@
     @Styles.Render("~/Content/core")
     @if (IsSectionDefined("AddToHead"))
     {@RenderSection("AddToHead", required: false)}
+    @Html.Partial("_GA")
 </head>
 <body class="smoothscroll enable-animation">
     @Html.Partial("_SlideTop")
