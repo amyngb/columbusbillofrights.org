@@ -223,6 +223,7 @@
     <Content Include="Content\assets\images\Mosher4.JPG" />
     <Content Include="Content\assets\images\n4.png" />
     <Content Include="Content\assets\images\ODS.png" />
+    <Content Include="Content\assets\images\Ohio_Community_Rights_400x576.png" />
     <Content Include="Content\assets\images\parallax-transp.jpg" />
     <Content Include="Content\assets\images\parallax.jpg" />
     <Content Include="Content\assets\images\particles_bg.jpg" />
@@ -3664,6 +3665,8 @@
     <Content Include="Views\OurWork\Shared\_WeThePeopleClip.cshtml" />
     <Content Include="Views\Media\AudioGallery.cshtml" />
     <Content Include="Views\Shared\_GA.cshtml" />
+    <Content Include="Views\OurWork\CELDF.cshtml" />
+    <Content Include="Views\OurWork\OhioCommunityRights.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CCBOR.Core\CCBOR.Core.csproj">

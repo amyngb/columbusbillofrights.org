@@ -23,116 +23,132 @@
             </a>
             <div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
                 <nav class="nav-main">
-                    <ul id="topMain" class="nav nav-pills nav-main">
-                        <li>
-                            <a href="@Url.Action("Index","Home")">
-                                HOME
-                            </a>
-                        </li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" href="@Url.Action("Index","OurWork")">
-                                OUR WORK
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown">
-                                    <a href="@Url.Action("About","OurWork")">
-                                        ABOUT
-                                    </a>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="@Url.Action("WeThePeople","OurWork")">
-                                        WE THE PEOPLE 2.0
-                                    </a>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="@Url.Action("OhioDemocracySchool","OurWork")">
-                                        OHIO DEMOCRACY SCHOOL
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" href="@Url.Action("Index","Resources")">
-                                RESOURCES
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown">
-                                    <a href="@Url.Action("InjectionWells","Resources")">
-                                        INJECTION WELLS
-                                    </a>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="@Url.Action("EPA","Resources")">
-                                        EPA RULES
-                                    </a>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="@Url.Action("RadioActiveWasteAlert","Resources")">
-                                        RADIOACTIVE WASTE ALERT
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" href="@Url.Action("Index","HelpOut")">
-                                HELP OUT
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown">
-                                    <a href="@Url.Action("Donate","HelpOut")">
-                                        DONATE
-                                    </a>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="@Url.Action("Volunteer","HelpOut")">
-                                        VOLUNTEER
-                                    </a>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="@Url.Action("Apparel","HelpOut")">
-                                        APPAREL
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="@Url.Action("Index","Events")">
-                                EVENTS
-                            </a>
-                        </li>
-                        <li>
-                            <a href="@Url.Action("Index","Blog")">
-                                BLOG
-                            </a>
-                        </li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" href="@Url.Action("Index","Media")">
-                                MEDIA
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown">
-                                    <a href="@Url.Action("PhotoGallery","Media")">
-                                        PHOTO GALLERY
-                                    </a>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="@Url.Action("VideoGallery","Media")">
-                                        VIDEO GALLERY
-                                    </a>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="@Url.Action("AudioGallery","Media")">
-                                        AUDIO GALLERY
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="@Url.Action("Contact","Home")">
-                                CONTACT
-                            </a>
-                        </li>
-                    </ul>
+					<ul id="topMain" class="nav nav-pills nav-main">
+						<li>
+							<a href="@Url.Action("Index","Home")">
+								HOME
+							</a>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" href="@Url.Action("Index","OurWork")">
+								OUR WORK
+							</a>
+							<ul class="dropdown-menu">
+								<li class="dropdown">
+									<a href="@Url.Action("About","OurWork")">
+										ABOUT
+									</a>
+								</li>
+								<li class="dropdown">
+									<a href="@Url.Action("WeThePeople","OurWork")">
+										WE THE PEOPLE 2.0
+									</a>
+								</li>
+								<li class="dropdown">
+									<a href="@Url.Action("OhioDemocracySchool","OurWork")">
+										OHIO DEMOCRACY SCHOOL
+									</a>
+								</li>
+								<li class="dropdown">
+									<a href="@Url.Action("CELDF", "OurWork")">
+										CELDF
+									</a>
+								</li>
+								<li class="dropdown">
+									<a href="@Url.Action("OhioCommunityRights", "OurWork")">
+										Ohio Community Rights Network
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" href="@Url.Action("Index","Resources")">
+								RESOURCES
+							</a>
+							<ul class="dropdown-menu">
+								<li class="dropdown">
+									<a href="@Url.Action("InjectionWells","Resources")">
+										INJECTION WELLS
+									</a>
+								</li>
+								<li class="dropdown">
+									<a href="@Url.Action("EPA","Resources")">
+										EPA RULES
+									</a>
+								</li>
+								<li class="dropdown">
+									<a href="@Url.Action("RadioActiveWasteAlert","Resources")">
+										RADIOACTIVE WASTE ALERT
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" href="@Url.Action("Index","HelpOut")">
+								HELP OUT
+							</a>
+							<ul class="dropdown-menu">
+								<li class="dropdown">
+									<a href="@Url.Action("Donate","HelpOut")">
+										DONATE
+									</a>
+								</li>
+								<li class="dropdown">
+									<a href="@Url.Action("Volunteer","HelpOut")">
+										VOLUNTEER
+									</a>
+								</li>
+								<li class="dropdown">
+									<a href="@Url.Action("Apparel","HelpOut")">
+										APPAREL
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="@Url.Action("Index","Events")">
+								EVENTS
+							</a>
+						</li>
+						<li>
+							<a href="@Url.Action("Index","Blog")">
+								BLOG
+							</a>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" href="@Url.Action("Index","Media")">
+								MEDIA
+							</a>
+							<ul class="dropdown-menu">
+								<li class="dropdown">
+									<a href="@Url.Action("PhotoGallery","Media")">
+										PHOTO GALLERY
+									</a>
+								</li>
+								<li class="dropdown">
+									<a href="@Url.Action("VideoGallery","Media")">
+										VIDEO GALLERY
+									</a>
+								</li>
+								<li class="dropdown">
+									<a href="@Url.Action("AudioGallery","Media")">
+										AUDIO GALLERY
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="@Url.Action("Index","News")">
+								NEWS
+							</a>
+						</li>
+
+						<li>
+							<a href="@Url.Action("Contact","Home")">
+								CONTACT
+							</a>
+						</li>
+					</ul>
                 </nav>
             </div>
         </div>

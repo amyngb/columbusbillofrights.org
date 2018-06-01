@@ -28,5 +28,16 @@ namespace CCBOR.Web.Controllers
         {
             return View();
         }
+
+		public ActionResult CELDF()
+		{
+			return View();
+		}
+
+		public ActionResult OhioCommunityRights()
+		{
+			return View();
+		}
+
     }
 }
