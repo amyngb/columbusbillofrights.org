@@ -25,6 +25,10 @@ namespace CCBOR.Web.Controllers
         {
             return View();
         }
+		public ActionResult BillOfRights()
+		{
+			return View();
+		}
 
     }
 }

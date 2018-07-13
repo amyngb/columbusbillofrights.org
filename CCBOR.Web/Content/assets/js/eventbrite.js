@@ -50,7 +50,7 @@
             }
 
         } else {
-            $events.after('<div class="col-xs-12 col-sm-6"><h3>Sorry, there are no upcoming events.</h3></div>');
+			$events.after('<div class="col-xs-12 col-sm-6"><h3>Sorry, there are no upcoming events.  Visit our <a href="https://www.facebook.com/ColumbusBillofRights/" target="_blank"> Facebook page</a> for up-to-date information.</h3></div>');
         }
     })
         .fail(function () {
