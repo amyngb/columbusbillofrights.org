@@ -6,15 +6,38 @@
     <link href="~/Content/assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
 }
 @Html.Partial("~/Views/Home/_Slider.cshtml")
-<div class="callout alert alert-info b-0 rad-0 m-0">
-    <div class="text-center">
-        <h3>Visit our Volunteer page to find out where you can sign our petition and for info on our next meeting.</h3>
-        <p class="font-lato fs-20">
-            We truly care about our environment.
-        </p>
-        <a href="@Url.Action("Volunteer","HelpOut")" rel="nofollow" class="btn btn-default btn-lg mt-30">VOLUNTEER</a>
-    </div>
-</div>
+<section class="alert-info">
+	<div class="text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h3>
+						CCBOR Ordinance Ballot Initiative turned in and certified for 12,134 VALID Columbus Signatures!!!
+					</h3>
+				</div>
+				<div class="col-12 col-md-4">
+					<img class="img-fluid" src="~/Content/assets/images/CCBORCityCouncil5.jpg" />
+				</div>
+				<div class="col-12 col-md-4">
+					<img class="img-fluid" src="~/Content/assets/images/CCBOR City Council.jpg" />
+				</div>
+				<div class="col-12 col-md-4">
+					<img class="img-fluid" src="~/Content/assets/images/CCBORCityCouncil6.jpg" />
+				</div>
+				<div class="col-12">
+					<p class="font-lato fs-20 mt-30">
+						Only 9,000 were required to put a Citizen-led city ordinance on the November, 2018, Columbus, Ohio Ballot
+					</p>
+					<p>
+						We truly care about our environment.  Please visit our Help Out page to learn how you can help our effort.
+					</p>
+					<a href="@Url.Action("Volunteer","HelpOut")" rel="nofollow" class="btn btn-default btn-lg mt-30">VOLUNTEER</a>
+				</div>
+			</div>
+
+		</div>
+		</div>
+</section>
 <section>
     <div class="container">
         <h2>
