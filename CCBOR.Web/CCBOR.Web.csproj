@@ -156,8 +156,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\assets\audio\CV Statues and Statutes Community Bill Of Rights denied.mp3" />
     <Content Include="Content\assets\audio\TOSOT051918-CCBOR.mp3" />
     <Content Include="Content\assets\audio\TOSOTN5918-CCBOR.mp3" />
+    <Content Include="Content\assets\audio\WGRNnewsexp0824CCBOR.BOE0822update.mp3" />
     <Content Include="Content\assets\css\color_scheme\blue.css" />
     <Content Include="Content\assets\css\custom.css" />
     <Content Include="Content\assets\css\essentials.css" />
@@ -174,6 +176,8 @@
     <Content Include="Content\assets\images\blog-injection-well.jpg" />
     <Content Include="Content\assets\images\blog-we-the-people.jpg" />
     <Content Include="Content\assets\images\blue.jpg" />
+    <Content Include="Content\assets\images\BOEBuilding.jpg" />
+    <Content Include="Content\assets\images\BOESupport.jpg" />
     <Content Include="Content\assets\images\CCBOR City Council.jpg" />
     <Content Include="Content\assets\images\CCBOR-01.PNG" />
     <Content Include="Content\assets\images\CCBOR-02.PNG" />
@@ -199,6 +203,7 @@
     <Content Include="Content\assets\images\columbus-bill-of-rights-logo.png" />
     <Content Include="Content\assets\images\ComFestPoster.jpg" />
     <Content Include="Content\assets\images\favicon.ico" />
+    <Content Include="Content\assets\images\FreePressCover.jpg" />
     <Content Include="Content\assets\images\green-min.jpg" />
     <Content Include="Content\assets\images\lightblue-min.jpg" />
     <Content Include="Content\assets\images\loaders\1.gif" />
@@ -228,6 +233,7 @@
     <Content Include="Content\assets\images\mdl-min.jpg" />
     <Content Include="Content\assets\images\Mosher4.JPG" />
     <Content Include="Content\assets\images\n4.png" />
+    <Content Include="Content\assets\images\NotAnotherFlint.jpg" />
     <Content Include="Content\assets\images\ODS.png" />
     <Content Include="Content\assets\images\Ohio_Community_Rights_400x576.png" />
     <Content Include="Content\assets\images\parallax-transp.jpg" />
@@ -3400,7 +3406,6 @@
     <Content Include="Content\assets\plugins\widget.jflickr\setup.js" />
     <Content Include="Content\assets\plugins\widget.jflickr\style.css" />
     <Content Include="Content\assets\plugins\widget.twittie\twittie.min.js" />
-    <Content Include="Content\assets\videos\wereAllDownstream_v9.mp4" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="ApplicationInsights.config">
@@ -3611,6 +3616,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\assets\plugins\slider.layerslider\plugins\debug\" />
+    <Folder Include="Content\assets\videos\" />
     <Folder Include="Logs\Activity\" />
     <Folder Include="Scripts\esm\" />
   </ItemGroup>

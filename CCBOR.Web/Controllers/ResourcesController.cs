@@ -29,6 +29,5 @@ namespace CCBOR.Web.Controllers
 		{
 			return View();
 		}
-
-    }
+	}
 }

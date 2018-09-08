@@ -32,7 +32,9 @@
                         address = event.venue.address.localized_multi_line_address_display[0]
                             + '</br>' + event.venue.address.localized_multi_line_address_display[1];
                     }
-                }
+				}
+
+				console.log(event);
 
                 eventDisp = '<div class="col-xs-12 col-sm-6 col-md-3"><div class="card"><div class="card-header text-center"><h4>'
                     + event.name.text
