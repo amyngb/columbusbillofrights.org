@@ -1,11 +1,11 @@
 ﻿<footer id="footer">
     <div class="container">
-        <div class="row">
-            <div class="col-md-5">
-                <h3 class="letter-spacing-1">The Columbus Community Bill of Rights</h3>
-                <h4>DONATE NOW</h4>
-                @Html.Partial("~/Views/HelpOut/Shared/_PayPalDonate.cshtml")
-            </div>
+		<div class="row">
+			<div class="col-md-4">
+				<h3 class="letter-spacing-1">The Columbus Community Bill of Rights</h3>
+				<h4>DONATE NOW</h4>
+				@Html.Partial("~/Views/HelpOut/Shared/_PayPalDonate.cshtml")
+			</div>
 			<div class="col-md-3">
 				<a href="https://www.facebook.com/ColumbusBillofRights/" target="_blank">
 					<i class="ico-color ico-bordered ico-4x ico-hover fa fa-facebook"></i>
@@ -17,20 +17,22 @@
 					<i class="ico-color ico-bordered ico-4x ico-hover fa fa-twitter"></i>
 				</a>
 			</div>
-            <div class="col-md-4">
-                <h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
-                <p>Subscribe to Our Newsletter to get Important News</p>
-                <form id="subscribeForm" method="post">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                        <input type="email" id="emailAddress" name="EmailAddress" class="form-control" placeholder="Enter Your Email">
-                        <span class="input-group-btn">
-                            <button class="btn btn-success toastr-notify" type="submit">Subscribe</button>
-                        </span>
-                    </div>
-                </form>
-            </div>
-        </div>
+			<div class="col-md-5">
+				<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
+				<p>Subscribe to Our Newsletter to get Important News</p>
+				<script type="text/javascript" src="https://signup.ymlp.com/signup.js?id=gbhhbmwgmgj"></script>
+
+				@*<form id="subscribeForm" method="post">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+				<input type="email" id="emailAddress" name="EmailAddress" class="form-control" placeholder="Enter Your Email">
+				<span class="input-group-btn">
+					<button class="btn btn-success toastr-notify" type="submit">Subscribe</button>
+				</span>
+			</div>
+		</form>*@
+			</div>
+		</div>
     </div>
     <div class="copyright">
         <div class="container">

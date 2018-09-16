@@ -203,7 +203,6 @@
     <Content Include="Content\assets\images\columbus-bill-of-rights-logo.png" />
     <Content Include="Content\assets\images\ComFestPoster.jpg" />
     <Content Include="Content\assets\images\favicon.ico" />
-    <Content Include="Content\assets\images\FreePressCover.jpg" />
     <Content Include="Content\assets\images\green-min.jpg" />
     <Content Include="Content\assets\images\lightblue-min.jpg" />
     <Content Include="Content\assets\images\loaders\1.gif" />
@@ -3680,6 +3679,7 @@
     <Content Include="Views\OurWork\CELDF.cshtml" />
     <Content Include="Views\OurWork\OhioCommunityRights.cshtml" />
     <Content Include="Views\Resources\BillOfRights.cshtml" />
+    <Content Include="Views\HelpOut\Shared\_CrowdFundDonate.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CCBOR.Core\CCBOR.Core.csproj">
