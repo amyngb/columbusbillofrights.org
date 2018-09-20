@@ -159,6 +159,8 @@
     <Content Include="Content\assets\audio\CV Statues and Statutes Community Bill Of Rights denied.mp3" />
     <Content Include="Content\assets\audio\TOSOT051918-CCBOR.mp3" />
     <Content Include="Content\assets\audio\TOSOTN5918-CCBOR.mp3" />
+    <Content Include="Content\assets\audio\WGRNnews0917OSCrejectsCBOR6-1-short.mp3" />
+    <Content Include="Content\assets\audio\WGRNnewsColsAntifrackInitiativeNixed4NovBallot180825 1.mp3" />
     <Content Include="Content\assets\audio\WGRNnewsexp0824CCBOR.BOE0822update.mp3" />
     <Content Include="Content\assets\css\color_scheme\blue.css" />
     <Content Include="Content\assets\css\custom.css" />
@@ -234,6 +236,7 @@
     <Content Include="Content\assets\images\n4.png" />
     <Content Include="Content\assets\images\NotAnotherFlint.jpg" />
     <Content Include="Content\assets\images\ODS.png" />
+    <Content Include="Content\assets\images\ohio-supreme-court.jpg" />
     <Content Include="Content\assets\images\Ohio_Community_Rights_400x576.png" />
     <Content Include="Content\assets\images\parallax-transp.jpg" />
     <Content Include="Content\assets\images\parallax.jpg" />
@@ -242,6 +245,7 @@
     <Content Include="Content\assets\images\sky-1-min.jpg" />
     <Content Include="Content\assets\images\sky-2-min.jpg" />
     <Content Include="Content\assets\images\sky-3-min.jpg" />
+    <Content Include="Content\assets\images\StillFighting.jpg" />
     <Content Include="Content\assets\images\UpperScioto_Columbus\UpperScioto_Columbus-1.jpg" />
     <Content Include="Content\assets\images\Volunteer-001.jpg" />
     <Content Include="Content\assets\images\Volunteer-002.png" />
